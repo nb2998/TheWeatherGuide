@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardCornerRadius="10dp">
+    <!--android:background="@drawable/wallpaper"-->
+
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:context="com.apps.nishtha.theweatherguide.Activities.MainActivity"
+        android:background="#C2DFFF">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/imgCondition"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/ic_launcher" />
+       <TextView
+           android:id="@+id/textCondition"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="condition"
+           android:textSize="20sp"
+           android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="5">
+
+        <TextView
+            android:id="@+id/textDate"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Date"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/textLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Location"
+            android:textSize="28sp"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/textTemp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="temp"
+            android:textSize="28sp"
+            android:gravity="center"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+    <android.support.design.widget.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottomNavigation"
+        android:background="@color/colorPrimary"
+        app:menu="@menu/menu_bottom_nav"
+        app:itemTextColor="@android:color/white">
+
+    </android.support.design.widget.BottomNavigationView>
+
+</RelativeLayout>

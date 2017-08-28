@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuAstro"
+        android:title="Astro"
+        android:icon="@android:drawable/star_off">
+    </item>
+    <item android:id="@+id/menuTemp"
+        android:title="Temperature"
+        android:icon="@android:drawable/ic_menu_today">
+    </item>
+    <item android:id="@+id/menuLocation"
+        android:title="Edit Location"
+        android:icon="@android:drawable/ic_dialog_map">
+
+    </item>
+
+</menu>
